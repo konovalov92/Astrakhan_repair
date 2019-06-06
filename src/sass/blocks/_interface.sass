@@ -1,3 +1,45 @@
+*
+  box-sizing: border-box
+body 
+  font-family: 'Museo Sans 300 Light'
+img
+  max-width: 100%
+
 .container
-  width: 1170px
-  margin: auto
+  max-width: 1170px
+  // width: 95%
+  margin-left: auto
+  margin-right: auto
+
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 18px 30px
+  transition: 0.2s
+  &:hover
+    background-color: lighten($main-color, 15%)
+    cursor: pointer
+  &:focus
+    outline: none
+  &:active
+    background-color: darken($main-color, 10%)
+
+.arrows
+  &-left, &-right
+    &:hover
+      cursor: pointer
+
+@media (max-width: 1200px)
+  .container
+    width: 95%
+@media (max-width: 768px)
+  .navbar
+    &__contacts
+      display: none
+    
+@media (max-width: 567px)
+  .container
+    width: 95%
+
+    

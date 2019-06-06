@@ -1,0 +1,651 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 18px 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #ffe04d;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  background-color: #cca800;
+}
+
+.arrows-left:hover, .arrows-right:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.navbar__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  font-family: 'Museo Sans 300 Light';
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__button {
+  margin-left: 28px;
+  font-family: 'Museo Sans 700 Light';
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.navbar_phone {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Museo Sans 700 Light';
+}
+
+@media (max-width: 382px) {
+  .navbar {
+    padding: 17px 0;
+  }
+  .navbar__logo {
+    max-width: 91px;
+  }
+  .navbar__button {
+    font-size: 10px;
+    padding: 15px 26px 14px 26px;
+    border-radius: 5px;
+  }
+}
+
+.main {
+  padding-top: 51px;
+  padding-bottom: 47px;
+  background-color: #f5f5f5;
+}
+
+.main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-info {
+  margin-top: -1px;
+}
+
+.main-info__title {
+  color: #333333;
+  font-size: 41px;
+  line-height: 55px;
+  margin: 0px 0 16px -2px;
+  font-family: 'Museo Sans 700 Light';
+}
+
+.main-info__subtitle {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 65px;
+  font-family: 'Museo Sans 700 Light';
+}
+
+.main-list {
+  margin: 0;
+  padding: 32px 0 0 0;
+}
+
+.main-list__text {
+  font-family: 'Museo Sans 300 Light';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+}
+
+.main-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-list__image {
+  margin-right: 30px;
+  padding: 14px 0 12px 0;
+}
+
+@media (max-width: 1200px) {
+  .main-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-info__title {
+    margin-bottom: 0;
+  }
+  .main-list {
+    padding-top: 18px;
+    margin-bottom: 38px;
+  }
+  .main-list__image {
+    padding: 10px 0 10px 0;
+  }
+  .main-image {
+    margin-bottom: 52px;
+  }
+}
+
+@media (max-width: 386px) {
+  .container {
+    max-width: 87%;
+  }
+  .main {
+    margin-top: 0;
+    padding: 0;
+  }
+  .main-info__title {
+    font-size: 24px;
+    padding: 45px 0 0 6px;
+    line-height: 1.2;
+  }
+}
+
+@font-face {
+  font-family: 'Museo Sans 300 Light';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 700 Light';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.offer {
+  padding-top: 56px;
+  padding-bottom: 92px;
+  background: url("../img/background_offer.png") no-repeat;
+  background-size: contain;
+  background-position: center right;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+}
+
+.offer__button {
+  width: 100%;
+  margin-top: 30px;
+  color: #333333;
+  font-family: "Museo Sans 700 Light";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 25px 92px 27px 92px;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer-block__title {
+  margin-bottom: 20px;
+  color: #333333;
+  font-family: "Museo Sans 700 Light";
+  font-size: 24px;
+  line-height: 35px;
+  max-width: 354px;
+}
+
+.offer-block__subtitle {
+  display: block;
+  margin-bottom: 31px;
+  color: #333333;
+  font-family: "Museo Sans 300 Light";
+  font-size: 16px;
+  max-width: 232px;
+}
+
+.offer-block__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+}
+
+.offer-block__message {
+  max-width: 225px;
+  color: #333333;
+  font-family: "Museo Sans 300 Light";
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer-block__feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 192px;
+  margin-right: 10px;
+}
+
+.offer-block__or-call {
+  color: #333333;
+  font-family: "Museo Sans 300 Light";
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer-block__call {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Museo Sans 700 Light";
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form__input {
+  width: 240px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding: 26px 0 26px 25px;
+  color: #999999;
+  font-family: "Museo Sans 300 Light";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form__input:first-child {
+  margin-right: 10px;
+}
+
+.form__input:nth-child(2) {
+  padding-left: 31px;
+}
+
+@media (max-width: 1200px) {
+  .form__input:first-child {
+    margin-bottom: 10px;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .offer {
+    margin-left: 40px;
+  }
+  .offer__button {
+    padding: 25px 24px 27px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    margin-left: 40px;
+  }
+  .offer__button {
+    padding: 15px 20px 15px 20px;
+    font-size: 13px;
+  }
+  .offer-block__message {
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 220px;
+  }
+  .offer-block__or-call {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .offer-block__call {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .offer-block__feedback {
+    margin: 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  man-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 2px;
+}
+
+.modal-dialog__title {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Museo Sans 700 Light';
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 2px;
+  border: none;
+  background-color: #ccffff;
+}
+
+.modal-dialog__close:focus {
+  outline: none;
+}
+
+.modal-dialog__close:active {
+  background-color: #4dffff;
+}
+
+.navigation {
+  position: fixed;
+  display: inline-block;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0.7;
+}
+
+.navigation:hover {
+  cursor: pointer;
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/potrfolio-pattern.jpg") repeat-y center;
+  background-size: 50%;
+  background-position: center left;
+}
+
+.portfolio__title {
+  text-align: center;
+  padding: 87px 0 94px 0;
+  margin: 0;
+  color: #333333;
+  font-family: 'Museo Sans 700 Light';
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.portfolio__arrows {
+  margin: auto;
+  margin-top: 68px;
+  padding-bottom: 100px;
+  max-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-active {
+  width: 400px !important;
+}
+
+.slick-track {
+  width: 6000px !important;
+}
+
+.price__title {
+  max-width: 515px;
+  margin: auto;
+  text-align: center;
+  margin-top: 85px;
+  color: #333333;
+  font-family: "Museo Sans 700 Light";
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 38px;
+}
+
+.price__subtitle {
+  margin-bottom: 47px;
+  text-align: center;
+  display: block;
+  color: #333333;
+  font-family: "Museo Sans 300 Light";
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.price__card {
+  padding-bottom: 44px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__title {
+  color: #333333;
+  font-family: "Museo Sans 300 Light";
+  font-size: 18px;
+  line-height: 45px;
+  margin-top: 22px;
+  margin-left: 3px;
+  margin-bottom: 17px;
+}
+
+.card__img {
+  display: block;
+}
+
+.card__link {
+  display: inline-block;
+  color: #333333;
+  font-family: "Museo Sans 700 Light";
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  position: relative;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.card__link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  z-index: -1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/*# sourceMappingURL=style.css.map */

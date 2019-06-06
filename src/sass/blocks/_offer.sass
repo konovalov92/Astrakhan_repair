@@ -1,0 +1,115 @@
+.offer
+  padding-top: 56px
+  padding-bottom: 92px
+  background: url('../img/background_offer.png') no-repeat
+  background-size: contain
+  background-position: center right
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    background: #ffffff
+    top: 0
+    left: 0
+  &__button
+    width: 100% 
+    margin-top: 30px
+    color: #333333
+    font-family: "Museo Sans 700 Light"
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+    padding: 25px 92px 27px 92px
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+    &__title
+      margin-bottom: 20px
+      color: $color-text
+      font-family: "Museo Sans 700 Light"
+      font-size: 24px
+      line-height: 35px
+      max-width: 354px
+    &__subtitle
+      display: block
+      margin-bottom: 31px
+      color: $color-text
+      font-family: "Museo Sans 300 Light"
+      font-size: 16px
+      max-width: 232px
+    &__footer
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding-top: 25px
+    &__message
+      max-width: 225px
+      color: $color-text
+      font-family: "Museo Sans 300 Light"
+      font-size: 15px
+      line-height: 24px
+    &__feedback
+      display: flex
+      flex-direction: column
+      max-width: 192px
+      margin-right: 10px
+    &__or-call
+      color: $color-text
+      font-family: "Museo Sans 300 Light"
+      font-size: 15px
+      line-height: 24px
+    &__call
+      text-decoration: none
+      color: #333333
+      font-family: "Museo Sans 700 Light"
+      font-size: 15px
+      line-height: 24px
+.form
+  &__input
+    width: 240px
+    height: 65px
+    border-radius: 10px
+    border: 1px solid $color-border
+    padding: 26px 0 26px 25px
+    color: $color-input
+    font-family: "Museo Sans 300 Light"
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    &:first-child
+      margin-right: 10px
+    &:nth-child(2)
+      padding-left: 31px
+@media (max-width: 1200px)
+  .form
+    &__input
+      &:first-child
+        margin-bottom: 10px
+    &__input
+      width: 100%
+  .offer
+    margin-left: 40px
+    &__button
+      padding: 25px 24px 27px 24px
+@media (max-width: 768px)
+  .offer
+    margin-left: 40px
+    &__button
+      padding: 15px 20px 15px 20px
+      font-size: 13px
+    &-block
+      &__message
+        font-size: 13px
+        line-height: 20px
+        max-width: 220px
+      &__or-call
+        font-size: 13px
+        line-height: 20px
+      &__call
+        font-size: 12px
+        line-height: 20px
+      &__feedback
+        margin: 0

@@ -1,0 +1,65 @@
+.main
+  padding-top: 51px
+  padding-bottom: 47px
+  background-color: #f5f5f5
+.main-block
+  display: flex
+  justify-content: space-between
+  align-items: center
+.main-info
+  margin-top: -1px
+  &__title
+    color: $color-text
+    font-size: 41px
+    line-height: 55px
+    margin: 0px 0 16px -2px
+    font-family: 'Museo Sans 700 Light'
+  &__subtitle
+    color: $color-text
+    font-size: 20px
+    font-weight: 700
+    line-height: 65px
+    font-family: 'Museo Sans 700 Light'
+.main-list
+  margin: 0
+  padding: 32px 0 0 0
+  &__text
+    font-family: 'Museo Sans 300 Light'
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+    color: $color-text
+
+  &__item
+    display: flex
+    justify-content: end
+    align-items: center
+  &__image
+    margin-right: 30px
+    padding: 14px 0 12px 0
+
+
+@media (max-width: 1200px)
+  .main-block
+    flex-direction: column
+@media (max-width: 768px)
+  .main-info__title
+    margin-bottom: 0
+  .main-list
+    padding-top: 18px
+    margin-bottom: 38px
+  .main-list__image
+    padding: 10px 0 10px 0
+  .main-image
+    margin-bottom: 52px
+
+@media (max-width: 386px)
+  .container
+    max-width: 87%
+  .main
+    margin-top: 0
+    padding: 0
+    &-info__title
+      font-size: 24px
+      padding: 45px 0 0 6px
+      line-height: 1.2
